@@ -10,6 +10,7 @@ import (
 func main() {
 
 	go DatabaseConnection()
+	go apiConnection()
 
 	//go routine olduğundan hemen kapanmaması için
 	sigs := make(chan os.Signal, 1)
